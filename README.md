@@ -62,44 +62,44 @@
     </ul>
   </section>
 
-  <!-- Projects -->
+  <!-- Featured Projects -->
   <section class="bg-white dark:bg-gray-800 py-10">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
-
-      <!-- Filter Buttons -->
-      <div class="mb-6 flex flex-wrap gap-3">
-        <button class="filter-btn px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100" data-filter="all">All</button>
-        <button class="filter-btn px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100" data-filter="AI">AI</button>
-        <button class="filter-btn px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100" data-filter="Cloud">Cloud</button>
-        <button class="filter-btn px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100" data-filter="Web">Web</button>
-      </div>
-
-      <!-- Project Cards -->
+      <h2 class="text-3xl font-semibold mb-6">Featured Projects</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="project-card bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-md" data-category="AI Cloud Web">
-          <h3 class="text-2xl font-bold mb-2">AI-Powered Smart E-Commerce Platform</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-4">
-            Enhances online shopping through AI-driven recommendations, a smart chatbot, and predictive inventory management.
+
+        <!-- Health Insurance Claims Analyzer -->
+        <div class="project-card bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">🔎 Health Insurance Claims Analyzer</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            NLP-powered Streamlit app to categorize, prioritize, and extract sentiment from health insurance claim inquiries using Hugging Face models.
           </p>
-          <h4 class="font-semibold">Technologies & Tools:</h4>
-          <p class="text-gray-700 dark:text-gray-300 mb-2">
-            AI: OpenAI, Claude, Amazon Bedrock<br>
-            Cloud: AWS, Google Cloud, Azure, Google BigQuery<br>
-            DevOps: Docker, Kubernetes, Terraform<br>
-            Frontend: React.js, Next.js<br>
-            Backend: Django, Flask, Node.js
-          </p>
-          <h4 class="font-semibold">Key Features:</h4>
-          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-            <li>Personalized shopping experience with AI recommendations</li>
-            <li>Real-time customer support via smart chatbot</li>
-            <li>Optimized stock levels using predictive analytics</li>
-            <li>Fully scalable and resilient architecture across multiple cloud providers</li>
-          </ul>
         </div>
 
-        <!-- You can duplicate the above card for more projects -->
+        <!-- Sentiment Analysis with BERT -->
+        <div class="project-card bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">🗣️ Sentiment Analysis with BERT</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Fine-tuned BERT model to classify customer reviews with real-time deployment for e-commerce insights.
+          </p>
+        </div>
+
+        <!-- AI-Powered E-Commerce Chatbot -->
+        <div class="project-card bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">🤖 AI-Powered E-Commerce Chatbot</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            GenAI chatbot using LangChain and OpenAI API to recommend products, resolve queries, and personalize user experiences.
+          </p>
+        </div>
+
+        <!-- Streamlit + FastAPI AI Stack -->
+        <div class="project-card bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">⚡ Streamlit + FastAPI AI Stack</h3>
+          <p class="text-gray-700 dark:text-gray-300">
+            Full-stack projects showcasing FastAPI for backend LLMs and Streamlit for interactive demos and dashboards.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -118,24 +118,6 @@
     toggle.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
       toggle.textContent = document.documentElement.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
-    });
-
-    // Project Filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projects = document.querySelectorAll('.project-card');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const filter = btn.getAttribute('data-filter');
-
-        projects.forEach(project => {
-          if(filter === 'all' || project.dataset.category.includes(filter)) {
-            project.style.display = 'block';
-          } else {
-            project.style.display = 'none';
-          }
-        });
-      });
     });
   </script>
 
