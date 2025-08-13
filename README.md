@@ -6,7 +6,7 @@
       <h1 class="text-2xl font-bold">Sai Shyam Ashwin Doddaboiena</h1>
       <div class="flex items-center gap-4">
         <a href="https://www.linkedin.com/in/saishyamashwin/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">LinkedIn</a>
-        <button id="dark-toggle" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-lg">Dark Mode</button>
+      
       </div>
     </div>
   </header>
