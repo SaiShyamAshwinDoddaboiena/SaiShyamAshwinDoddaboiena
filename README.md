@@ -62,4 +62,15 @@
     </ul>
   </section>
 
- 
+ <!-- Interests Section -->
+<section class="container mx-auto px-6 py-10">
+  <h2 class="text-3xl font-semibold mb-4">Interests</h2>
+  <ul class="flex flex-wrap gap-4">
+    <li class="bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Generative AI & LLMs</li>
+    <li class="bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Prompt Engineering & RAG</li>
+    <li class="bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Healthcare AI Solutions</li>
+    <li class="bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">LangChain + Vertex AI</li>
+    <li class="bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">End-to-End MLOps & CI/CD for AI</li>
+  </ul>
+</section>
+
