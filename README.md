@@ -7,8 +7,7 @@
       <div class="flex items-center gap-4">
         <a href="https://www.linkedin.com/in/saishyamashwin/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">LinkedIn</a>
       
-      </div>
-    </div>
+    
   </header>
 
   <!-- About Me -->
